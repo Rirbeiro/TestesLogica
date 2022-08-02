@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace NumeroPrimo
 {
-    public static class StartPrime
+    public static class InicioPrimo
     {
         const long MaxLongValue = 9223372036854775807;
 
@@ -43,10 +43,10 @@ namespace NumeroPrimo
         {
             int iteration = 0;
 
-            for (int i = 1; i <= input; i++)
+            for (int divisor = 1; divisor <= input; divisor++)
             {
                 if (iteration > 2) break;
-                if (input % i == 0) iteration++;
+                if (input % divisor == 0) iteration++;
             }
 
             Console.Clear();

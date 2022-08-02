@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\Constants.cs" />
-    <Compile Include="StartMain.cs" />
+    <Compile Include="InicioPrincipal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +54,10 @@
     <ProjectReference Include="..\NumeroPrimo\NumeroPrimo.csproj">
       <Project>{6EC57081-CA1D-42D1-BD11-ED0D5E95ECFE}</Project>
       <Name>NumeroPrimo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Palindromo\Palindromo.csproj">
+      <Project>{88D3C5E7-AA97-4627-BEA7-1E6E80838323}</Project>
+      <Name>Palindromo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

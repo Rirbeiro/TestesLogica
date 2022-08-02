@@ -1,10 +1,11 @@
 ﻿using NumeroPrimo;
+using Palindromo;
 using System;
 using TelaPrincipal.Constants;
 
 namespace TelaPrincipal
 {
-    public static class StartMain
+    public static class InicioPrincipal
     {
         static void Main(string[] args)
         {
@@ -27,13 +28,14 @@ namespace TelaPrincipal
                 switch (readText)
                 {
                     case MainConstants.NumeroPrimo:
-                        StartPrime.Main(args);
+                        InicioPrimo.Main(args);
                         break;
 
                     case MainConstants.MovimentoBot:
                         break;
 
                     case MainConstants.Palindromo:
+                        InicioPalindromo.Main(args);
                         break;
 
                     default:
