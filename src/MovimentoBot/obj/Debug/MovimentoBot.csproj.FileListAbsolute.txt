@@ -1,0 +1,7 @@
+D:\Studies\TestesLogica\src\MovimentoBot\bin\Debug\MovimentoBot.exe.config
+D:\Studies\TestesLogica\src\MovimentoBot\bin\Debug\MovimentoBot.exe
+D:\Studies\TestesLogica\src\MovimentoBot\bin\Debug\MovimentoBot.pdb
+D:\Studies\TestesLogica\src\MovimentoBot\obj\Debug\MovimentoBot.csproj.AssemblyReference.cache
+D:\Studies\TestesLogica\src\MovimentoBot\obj\Debug\MovimentoBot.csproj.CoreCompileInputs.cache
+D:\Studies\TestesLogica\src\MovimentoBot\obj\Debug\MovimentoBot.exe
+D:\Studies\TestesLogica\src\MovimentoBot\obj\Debug\MovimentoBot.pdb

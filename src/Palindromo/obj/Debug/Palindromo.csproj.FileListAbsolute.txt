@@ -1,0 +1,7 @@
+D:\Studies\TestesLogica\src\Palindromo\bin\Debug\Palindromo.exe.config
+D:\Studies\TestesLogica\src\Palindromo\bin\Debug\Palindromo.exe
+D:\Studies\TestesLogica\src\Palindromo\bin\Debug\Palindromo.pdb
+D:\Studies\TestesLogica\src\Palindromo\obj\Debug\Palindromo.csproj.AssemblyReference.cache
+D:\Studies\TestesLogica\src\Palindromo\obj\Debug\Palindromo.csproj.CoreCompileInputs.cache
+D:\Studies\TestesLogica\src\Palindromo\obj\Debug\Palindromo.exe
+D:\Studies\TestesLogica\src\Palindromo\obj\Debug\Palindromo.pdb

@@ -1,0 +1,7 @@
+D:\Studies\TestesLogica\src\NumeroPrimo\bin\Debug\NumeroPrimo.exe.config
+D:\Studies\TestesLogica\src\NumeroPrimo\bin\Debug\NumeroPrimo.exe
+D:\Studies\TestesLogica\src\NumeroPrimo\bin\Debug\NumeroPrimo.pdb
+D:\Studies\TestesLogica\src\NumeroPrimo\obj\Debug\NumeroPrimo.csproj.AssemblyReference.cache
+D:\Studies\TestesLogica\src\NumeroPrimo\obj\Debug\NumeroPrimo.csproj.CoreCompileInputs.cache
+D:\Studies\TestesLogica\src\NumeroPrimo\obj\Debug\NumeroPrimo.exe
+D:\Studies\TestesLogica\src\NumeroPrimo\obj\Debug\NumeroPrimo.pdb
