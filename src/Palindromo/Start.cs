@@ -1,6 +1,6 @@
 ﻿namespace Palindromo
 {
-    public class Program
+    public static class Start
     {
         static void Main(string[] args)
         {
