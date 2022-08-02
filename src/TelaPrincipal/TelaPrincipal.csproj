@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6EC57081-CA1D-42D1-BD11-ED0D5E95ECFE}</ProjectGuid>
+    <ProjectGuid>{302423DE-D141-4C97-9CDF-CEAFADDEC4CA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NumeroPrimo</RootNamespace>
-    <AssemblyName>NumeroPrimo</AssemblyName>
+    <RootNamespace>TelaPrincipal</RootNamespace>
+    <AssemblyName>TelaPrincipal</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StartPrime.cs" />
+    <Compile Include="Constants\Constants.cs" />
+    <Compile Include="StartMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NumeroPrimo\NumeroPrimo.csproj">
+      <Project>{6EC57081-CA1D-42D1-BD11-ED0D5E95ECFE}</Project>
+      <Name>NumeroPrimo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
