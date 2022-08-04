@@ -51,6 +51,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MovimentoBot\MovimentoBot.csproj">
+      <Project>{C1F8205B-8AD7-4E95-B0F1-2C5207552C9F}</Project>
+      <Name>MovimentoBot</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NumeroPrimo\NumeroPrimo.csproj">
       <Project>{6EC57081-CA1D-42D1-BD11-ED0D5E95ECFE}</Project>
       <Name>NumeroPrimo</Name>

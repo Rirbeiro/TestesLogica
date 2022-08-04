@@ -18,18 +18,25 @@ namespace Palindromo
         {
             bool isPalindrome = true;
 
-            Console.WriteLine("Entre com uma palavra ou texto.");
-            string inputNoFilter = Console.ReadLine().ToUpper();
-
-            char[] input = new String(inputNoFilter.Where(Char.IsLetter).ToArray()).ToCharArray();
-
-            for (int i = 0, j = input.Length - 1; i < j; i++, j--)
+            try
             {
-                if (input[i] != input[j])
+                Console.WriteLine("Entre com uma palavra ou texto.");
+                string inputNoFilter = Console.ReadLine().ToUpper();
+
+                char[] input = new String(inputNoFilter.Where(Char.IsLetter).ToArray()).ToCharArray();
+
+                for (int start = 0, end = input.Length - 1; start < end; start++, end--)
                 {
-                    isPalindrome = false;
-                    break;
+                    if (input[start] != input[end])
+                    {
+                        isPalindrome = false;
+                        break;
+                    }
                 }
+            }
+            catch
+            {
+                return false;
             }
 
             return isPalindrome;

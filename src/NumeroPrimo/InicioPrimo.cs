@@ -43,16 +43,23 @@ namespace NumeroPrimo
         {
             int iteration = 0;
 
-            for (int divisor = 1; divisor <= input; divisor++)
+            try
             {
-                if (iteration > 2) break;
-                if (input % divisor == 0) iteration++;
+                for (int divisor = 1; divisor <= input; divisor++)
+                {
+                    if (iteration > 2) break;
+                    if (input % divisor == 0) iteration++;
+                }
+
+                Console.Clear();
+
+                if (iteration == 2) { return (true, iteration); }
+                else { return (false, iteration); }
             }
-
-            Console.Clear();
-
-            if (iteration == 2) { return (true, iteration); }
-            else { return (false, iteration); }
+            catch
+            {
+                return (false, iteration);
+            }
         }
 
         private static bool IsMaxLongValue(string readText, long value) =>

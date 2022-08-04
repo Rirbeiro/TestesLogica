@@ -1,4 +1,5 @@
-﻿using NumeroPrimo;
+﻿using MovimentoBot;
+using NumeroPrimo;
 using Palindromo;
 using System;
 using TelaPrincipal.Constants;
@@ -21,6 +22,8 @@ namespace TelaPrincipal
 
                 Console.WriteLine($"3 - Palíndromo?{Environment.NewLine}");
 
+                Console.WriteLine($"Enter - Sair?{Environment.NewLine}");
+
                 string readText = Console.ReadLine();
                 
                 Console.Clear();
@@ -32,6 +35,7 @@ namespace TelaPrincipal
                         break;
 
                     case MainConstants.MovimentoBot:
+                        InicioBot.Main(args);
                         break;
 
                     case MainConstants.Palindromo:
@@ -39,6 +43,7 @@ namespace TelaPrincipal
                         break;
 
                     default:
+                        Environment.Exit(0);
                         break;
                 }
 
