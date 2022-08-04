@@ -29,7 +29,7 @@ namespace MovimentoBot
         {
             try
             {
-                if (xStart == 0 && xEnd > 0 || yStart == 0 & yEnd > 0)
+                if (xStart == 0 && xEnd > 0 || yStart == 0 && yEnd > 0)
                     return false;
                 if (xStart > xEnd || yStart > yEnd)
                     return false;
