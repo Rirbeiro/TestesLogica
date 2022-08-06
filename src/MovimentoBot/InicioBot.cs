@@ -17,7 +17,7 @@ namespace MovimentoBot
             Console.Write("Y2: ");
             double.TryParse(Console.ReadLine(), out double yEnd);
 
-            if (VerificaSeAlcancaCoordenadasFinaisRecursivamente(xStart, yStart, xEnd, yEnd))
+            if (IsCheckCoordenatesReachedRecursively(xStart, yStart, xEnd, yEnd))
                 Console.WriteLine("Alcançou coordenadas.");
             else
                 Console.WriteLine("Não alcançou coordenadas.");
@@ -25,7 +25,7 @@ namespace MovimentoBot
             Console.ReadLine();
         }
 
-        private static bool VerificaSeAlcancaCoordenadasFinaisRecursivamente(double xStart, double yStart, double xEnd, double yEnd)
+        private static bool IsCheckCoordenatesReachedRecursively(double xStart, double yStart, double xEnd, double yEnd)
         {
             try
             {
@@ -36,15 +36,15 @@ namespace MovimentoBot
                 if (xStart == xEnd && yStart == yEnd)
                     return true;
 
-                return VerificaSeAlcancaCoordenadasFinaisRecursivamente(xStart + yStart, yStart, xEnd, yEnd)
-                    || VerificaSeAlcancaCoordenadasFinaisRecursivamente(xStart, yStart + xStart, xEnd, yEnd);
+                return IsCheckCoordenatesReachedRecursively(xStart + yStart, yStart, xEnd, yEnd)
+                    || IsCheckCoordenatesReachedRecursively(xStart, yStart + xStart, xEnd, yEnd);
             }
             catch
             {
                 return false;
             }
         }
-        private static bool VerificaSeAlcancaCoordenadasFinais(double xStart, double yStart, double xEnd, double yEnd)
+        private static bool IsCheckCoordenatesReached(double xStart, double yStart, double xEnd, double yEnd)
         {
             // Continue se movendo de baixo para cima para alcançar (xStart , yStart) 
             while (xEnd > xStart && yEnd > yStart)
