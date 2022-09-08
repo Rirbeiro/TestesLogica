@@ -17,7 +17,7 @@ namespace MovimentoBot
             Console.Write("Y2: ");
             double.TryParse(Console.ReadLine(), out double yEnd);
 
-            if (IsCheckCoordenatesReachedRecursively(xStart, yStart, xEnd, yEnd))
+            if (IsCheckCoordenatesReached(xStart, yStart, xEnd, yEnd))
                 Console.WriteLine("Alcançou coordenadas.");
             else
                 Console.WriteLine("Não alcançou coordenadas.");
@@ -44,21 +44,35 @@ namespace MovimentoBot
                 return false;
             }
         }
+
+        private static bool? RulesCheckIsReached(double xStart, double yStart, double xEnd, double yEnd)
+        {
+            if (xStart == 0 && xEnd > 0 || yStart == 0 && yEnd > 0)
+                return false;
+            if (xStart > xEnd || yStart > yEnd)
+                return false;
+            if (xStart == xEnd && yStart == yEnd)
+                return true;
+
+            return null;
+        }
+
         private static bool IsCheckCoordenatesReached(double xStart, double yStart, double xEnd, double yEnd)
         {
-            // Continue se movendo de baixo para cima para alcançar (xStart , yStart) 
+            // Move de cima para baixo, até deixar xEnd = xStart ou yEnd = yStart, fazendo a decomposição das coordenadas finais
             while (xEnd > xStart && yEnd > yStart)
-                if (yEnd > xEnd) // o que for maior - mantenha o decremento igual
-                    yEnd = yEnd - xEnd;
+                if (yEnd > xEnd)
+                    yEnd = yEnd - xEnd; //subtraí yEnd até encontrar yStart
                 else
-                    xEnd = xEnd - yEnd;
+                    xEnd = xEnd - yEnd; //subtraí xEnd até encontrar xStart
 
-            // se chegarmos onde xStart == xEnd or yEnd == yStart
             if (xStart == xEnd && yStart == yEnd) return true;
-            // yStart < yEnd
-            if (xStart == xEnd && yStart < yEnd && (yEnd - yStart) % xStart == 0)
+            if (yStart > yEnd || xStart > xEnd) return false;
+
+            if (xStart == xEnd && (yEnd - yStart) % xStart == 0) //Verifica se as coordenadas X são iguais e faz o cálculo para verificar Yinicial  será alcançado 
                 return true;
-            return yStart == yEnd && xStart < xEnd && (xEnd - xStart) % yStart == 0;
+
+            return yStart == yEnd && (xEnd - xStart) % yStart == 0; //Verifica se as coordenadas Y são iguais e faz o cálculo para verificar Xinicial  será alcançado 
         }
 
 
