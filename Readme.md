@@ -5,7 +5,7 @@ O App consiste em uma tela principal, onde pode-se escolher as opções: 1,2,3 o
 ## Opção 1: Verifica se o número digitado é primo.
 
 Explicação: 
-Número pode ser dividido por ele mesmo ou por um. A lógica verifica se houve mais de duas divisões com resto =0, neste caso não sendo número primo. 
+Número primo pode ser dividido por ele mesmo ou por um. A lógica verifica se houve mais de duas divisões com resto =0, neste caso não sendo número primo. 
 Também foi criado duas validações simples:
 1 - verifica se o valor de entrada é maior que int64.Max.
 2 - verifica se a entrada é um número inteiro
