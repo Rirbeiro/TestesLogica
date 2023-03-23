@@ -57,6 +57,13 @@ namespace MovimentoBot
             return null;
         }
 
+        /*
+        Este código está verificando se as coordenadas iniciais (xStart, yStart) alcançaram as coordenadas de destino (xEnd, yEnd).
+        Ele faz isso subtraindo continuamente xEnd ou yEnd de si mesmo até que xEnd seja igual a xStart ou yEnd seja igual a yStart. 
+        Em seguida, ele verifica se xStart e xEnd, ou yStart e yEnd, são iguais. Ele também verifica se uma coordenada (xStart ou yStart) é maior que a 
+        coordenada correspondente (xEnd ou yEnd). Por fim, ele verifica se xEnd menos xStart é divisível por yStart ou se yEnd menos yStart é divisível por xStart. 
+        Se todas essas condições forem verdadeiras, retorna verdadeiro, caso contrário, retorna falso
+        */
         private static bool IsCheckCoordenatesReached(double xStart, double yStart, double xEnd, double yEnd)
         {
             // Move de cima para baixo, até deixar xEnd = xStart ou yEnd = yStart, fazendo a decomposição das coordenadas finais
