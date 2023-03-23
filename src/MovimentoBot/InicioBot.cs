@@ -25,6 +25,14 @@ namespace MovimentoBot
             Console.ReadLine();
         }
 
+        */
+          Este método verifica se um ponto com coordenadas (xStart, yStart) atingiu um ponto com coordenadas (xEnd, yEnd) usando recursão. 
+          A função primeiro verifica se os pontos inicial e final são válidos (se um não pode ter uma coordenada x ou y negativa 
+          e se o ponto inicial não pode ter um x ou y maior que o ponto final). Se forem válidos, o código retornará true se as coordenadas iniciais forem 
+          iguais às coordenadas finais e, caso contrário, retornará o resultado de uma chamada recursiva da mesma função com vários pontos iniciais modificados. 
+          As chamadas recursivas são variações de (xStart + yStart, yStart) ou (xStart, yStart + xStart) como ponto inicial, até que os pontos inicial e final 
+          correspondam. O código também inclui um bloco try/catch para lidar com quaisquer erros que possam surgir de uma chamada recursiva com falha.  
+        */
         private static bool IsCheckCoordenatesReachedRecursively(double xStart, double yStart, double xEnd, double yEnd)
         {
             try
