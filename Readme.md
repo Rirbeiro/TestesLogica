@@ -13,7 +13,7 @@ Também foi criado duas validações simples:
 ## Opção 2: Movimento do bot
 
 Explicação: 
-Analisando que se a coordenada inicialX == finalX e inicialY == finalY, é verificado que as coordenadas finais foram alcançadas. E se as coordenadaas inicias foram maiores que as finais, não é possível alcançar a mesmas.
+Verifica se a coordenada inicialX é igual a finalX e inicialY é igual a finalY. Dessa forma é verificado que as coordenadas finais foram alcançadas. E se as coordenadas inicias foram maiores que as finais, não é possível alcançar a mesmas.
 O problema foi resolvido usando recursão simples. O caso base seria verificar se a coordenada x ou y atual é maior que a de destino, nesse caso retorna false. Se ainda não for o ponto de destino, fiz duas chamadas para ambos os movimentos válidos a partir desse ponto. Se algum deles produzir um caminho, retorna true, caso contrário, retorna false.
 
 ## Opção 3: Palíndromo
