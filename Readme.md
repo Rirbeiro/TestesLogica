@@ -13,8 +13,12 @@ Também foi criado duas validações simples:
 ## Opção 2: Movimento do bot
 
 Explicação: 
-Verifica se a coordenada inicialX é igual a finalX e inicialY é igual a finalY. Dessa forma é verificado que as coordenadas finais foram alcançadas. E se as coordenadas inicias foram maiores que as finais, não é possível alcançar a mesmas.
-O problema foi resolvido usando recursão simples. O caso base seria verificar se a coordenada x ou y atual é maior que a de destino, nesse caso retorna false. Se ainda não for o ponto de destino, fiz duas chamadas para ambos os movimentos válidos a partir desse ponto. Se algum deles produzir um caminho, retorna true, caso contrário, retorna false.
+Verifica se um ponto com coordenadas (xStart, yStart) atingiu um ponto com coordenadas (xEnd, yEnd) usando recursão. 
+A função primeiro verifica se os pontos inicial e final são válidos (se um não pode ter uma coordenada x ou y negativa 
+e se o ponto inicial não pode ter um x ou y maior que o ponto final). Se forem válidos, o código retornará true se as coordenadas iniciais forem 
+iguais às coordenadas finais e, caso contrário, retornará o resultado de uma chamada recursiva da mesma função com vários pontos iniciais modificados. 
+As chamadas recursivas são variações de (xStart + yStart, yStart) ou (xStart, yStart + xStart) como ponto inicial, até que os pontos inicial e final 
+correspondam. O código também inclui um bloco try/catch para lidar com quaisquer erros que possam surgir de uma chamada recursiva com falha.
 
 ## Opção 3: Palíndromo
 
